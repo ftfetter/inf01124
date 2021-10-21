@@ -6,7 +6,7 @@ def initHashTable(size):
 
 def createHash(string, divider):
     value = 0
-    factor = 53 # Primeiro número primo maior ou igual ao número total de nomes (50)
+    factor = 53 # Primeiro número primo maior ou igual ao número total de caracteres possíveis (52)
     for i in range(0, len(string)):
         value = (factor * value + ord(string[i])) % divider
     return value
